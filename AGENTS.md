@@ -13,7 +13,7 @@
 - During the currently authorized initial implementation, local changes, commits, codex/* branch pushes, and draft PR creation are permitted.
 - main begins with a documentation-only bootstrap commit. All implementation follows in feature branches.
 - Do not merge PRs, force push, delete remote branches, change repository visibility, or modify access/branch protection without an explicit user request.
-- Before every push, inspect the current branch and exact remote URL. Push the explicit current branch; never use a broad mirror/all push.
+- Before every push, inspect the current branch, explicit branch being published, and exact remote URL. Push one verified branch at a time; never use a broad mirror/all push.
 - Split PRs by a coherent behavior/decision and its validation, not arbitrary file counts. Include tests with their behavior change.
 - If a PR depends on another unmerged PR, target that branch and explain the dependency. Do not duplicate the entire accumulated change against main.
 - Keep secrets, cookies, account details, private viewing history, and local authentication outside Git.
