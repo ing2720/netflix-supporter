@@ -12,6 +12,12 @@ PR 2·3은 앞 PR을 기반으로 한 stacked PR이다. 각 diff는 직전 작�
 
 ## 권한과 상태
 
-이 문서는 원격 PR이 이미 만들어졌다는 뜻이 아니다. 실제 게시 여부는 GitHub에서 확인해야 한다. 저장소 전송 및 PR 작성 인증이 준비되면 `scripts/publish.mjs`가 정확한 저장소와 이 3개 브랜치를 검증한 뒤 순차 게시한다.
+2026-10-05에 `scripts/publish.mjs`로 저장소와 브랜치를 확인하고 다음 Draft PR을 게시했다. 병합은 수행하지 않았다.
+
+- [PR #1 — 오프닝·줄거리 감지 엔진](https://github.com/ing2720/netflix-supporter/pull/1)
+- [PR #2 — 다음 회차 처리 경계](https://github.com/ing2720/netflix-supporter/pull/2)
+- [PR #3 — 설정·설치 패키지·검증 문서](https://github.com/ing2720/netflix-supporter/pull/3)
+
+게시 인증은 이 저장소 하나에 한정한 단기 fine-grained token을 사용했으며 전역 GitHub 로그인으로 저장하지 않았다. 스크립트는 이후 재실행에도 같은 저장소와 브랜치를 확인하고 기존 열린 PR을 재사용한다.
 
 초기 기준 브랜치가 없는 빈 저장소에만 문서 bootstrap `main`을 최초로 올린다. 기존 원격 main을 변경하거나 기능 브랜치를 병합하지 않는다.

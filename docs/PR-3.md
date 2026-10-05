@@ -15,6 +15,8 @@
 
 타입 검사, 45개 자동 테스트, 빌드, ZIP 무결성 검사. Chrome 모의 DOM의 활성화·회차 전환·CSS 전환 및 설정창 저장/새로고침 확인.
 
+구현 커밋 `efb25bf`는 [GitHub Actions Node.js 22/Ubuntu 검사](https://github.com/ing2720/netflix-supporter/actions/runs/37299712474)와 빌드 산출물 업로드도 통과했습니다.
+
 ## 한계
 
-실제 Netflix 로그인·재생과 Chrome 확장 설치 통합 검증은 아직 하지 않았습니다. 모의 환경의 속도를 실서비스 성능으로 주장하지 않습니다. 원격 CI 결과는 게시 후 확인해야 합니다.
+실제 Netflix 로그인·재생과 Chrome 확장 설치 통합 검증은 아직 하지 않았습니다. 모의 환경의 속도를 실서비스 성능으로 주장하지 않습니다.
